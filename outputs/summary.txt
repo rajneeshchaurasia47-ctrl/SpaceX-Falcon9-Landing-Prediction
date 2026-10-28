@@ -1,0 +1,41 @@
+Dataset rows: 90
+Landing success rate: 66.67%
+Launch sites:
+              count      mean
+LaunchSite                   
+CCAFS SLC 40     55  0.600000
+KSC LC 39A       22  0.772727
+VAFB SLC 4E      13  0.769231
+Orbit success:
+       count      mean
+Orbit                 
+ES-L1      1  1.000000
+GEO        1  1.000000
+GTO       27  0.518519
+HEO        1  1.000000
+ISS       21  0.619048
+LEO        7  0.714286
+MEO        3  0.666667
+PO         9  0.666667
+SO         1  0.000000
+SSO        5  1.000000
+VLEO      14  0.857143
+Missing values:
+FlightNumber       0
+Date               0
+BoosterVersion     0
+PayloadMass        0
+Orbit              0
+LaunchSite         0
+Outcome            0
+Flights            0
+GridFins           0
+Reused             0
+Legs               0
+LandingPad        26
+Block              0
+ReusedCount        0
+Serial             0
+Longitude          0
+Latitude           0
+Class              0

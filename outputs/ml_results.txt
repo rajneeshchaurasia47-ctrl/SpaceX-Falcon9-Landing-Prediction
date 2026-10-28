@@ -1,0 +1,10 @@
+Train rows: 67 | Test rows: 23
+Test accuracy: 0.7826
+              precision    recall  f1-score   support
+
+           0       1.00      0.38      0.55         8
+           1       0.75      1.00      0.86        15
+
+    accuracy                           0.78        23
+   macro avg       0.88      0.69      0.70        23
+weighted avg       0.84      0.78      0.75        23

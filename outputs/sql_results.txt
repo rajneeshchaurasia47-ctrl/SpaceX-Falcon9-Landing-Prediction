@@ -1,0 +1,27 @@
+
+-- site_summary
+SELECT LaunchSite, COUNT(*) AS launches, ROUND(AVG(Class)*100,1) AS success_pct FROM launches GROUP BY LaunchSite ORDER BY success_pct DESC
+  LaunchSite  launches  success_pct
+  KSC LC 39A        22         77.3
+ VAFB SLC 4E        13         76.9
+CCAFS SLC 40        55         60.0
+
+-- orbit_summary
+SELECT Orbit, COUNT(*) AS launches, ROUND(AVG(Class)*100,1) AS success_pct FROM launches GROUP BY Orbit ORDER BY launches DESC
+Orbit  launches  success_pct
+  GTO        27         51.9
+  ISS        21         61.9
+ VLEO        14         85.7
+   PO         9         66.7
+  LEO         7         71.4
+  SSO         5        100.0
+  MEO         3         66.7
+   SO         1          0.0
+  HEO         1        100.0
+  GEO         1        100.0
+ES-L1         1        100.0
+
+-- overall
+SELECT COUNT(*) AS launches, SUM(Class) AS successful_landings, ROUND(AVG(Class)*100,1) AS success_pct FROM launches
+ launches  successful_landings  success_pct
+       90                   60         66.7
